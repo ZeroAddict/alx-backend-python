@@ -15,7 +15,7 @@ wait_random = __import__('0-basic_async_syntax').wait_random
 
 async def wait_n(n: int, max_delay: int) -> List[float]:
     """
-    Asynchronous coroutine
+    Asynchronous coroutine with type anniotation
     wait_n defined as an async spins wait_random
     """
     tasks = [asyncio.create_task(wait_random(max_delay)) for _ in range(n)]
