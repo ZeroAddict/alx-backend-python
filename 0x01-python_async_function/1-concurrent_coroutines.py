@@ -27,7 +27,7 @@ async def wait_n(n: int, max_delay: int) -> List[float]:
     multiple wait_random tasks concurrently
     wait_n defined as an async spins wait_random
 
-    sArgs:
+    Args:
         n (int): Number of tasks to execute.
         max_delay (int): Maximum delay for each task.
 
